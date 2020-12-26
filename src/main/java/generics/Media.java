@@ -1,10 +1,14 @@
 package generics;
 
-public abstract class Media {
+public abstract class Media <T>{
     String mediaName;
     MediaType mediaType;
+    T content;
 
-    public Media(String mediaName, MediaType mediaType) {
-
+    public Media(String mediaName, MediaType mediaType, T content) {
+        this.mediaName = mediaName;
+        this.mediaType = mediaType;
+        this.content = content;
     }
+
 }
